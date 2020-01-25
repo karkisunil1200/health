@@ -1,9 +1,10 @@
 import React from 'react';
+import BodyList from './components/Body_Parts/BodyList';
 
 const App = () => {
   return (
     <div className='app-container'>
-      <h4>Welcome to the App component</h4>
+      <BodyList />
     </div>
   );
 };

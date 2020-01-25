@@ -1,8 +1,7 @@
-const initialState = {};
+import {combineReducers} from 'redux';
 
-export const reducer = (state = initialState, action) => {
-  switch (action) {
-    default:
-      return state;
-  }
-};
+import {imageReducer} from './imageReducer';
+
+export default combineReducers({
+  imageReducer
+});
