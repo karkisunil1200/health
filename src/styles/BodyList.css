@@ -1,0 +1,17 @@
+.body-list-container {
+  /* border: 3px solid blue; */
+}
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-list img {
+  width: 250px;
+  height: 200px;
+  border: 10px solid white;
+  box-shadow: 0 5px 10px #ccc;
+}
+
+.card {
+  margin: 10px;
+}

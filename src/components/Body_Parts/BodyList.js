@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
 import {imageData} from '../../images';
+import '../../styles/BodyList.css';
 
 const BodyList = props => {
   const [state, setState] = useState(imageData);
