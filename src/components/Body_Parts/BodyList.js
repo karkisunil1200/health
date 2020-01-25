@@ -8,7 +8,7 @@ const BodyList = props => {
 
   return (
     <div className='body-list-container'>
-      <h4>List of organs: </h4>
+      <h4 className='title'>Organs </h4>
       <div className='image-list'>
         {state.map(item => {
           return (
