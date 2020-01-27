@@ -15,7 +15,7 @@ const BodyDetails = props => {
     <div>
       {state.map(item => {
         // console.log('This is the item id  ', `${item.id}`);
-        return `${item.id}` === id ? <BodyDetailsCard item={item} /> : null;
+        return `${item.id}` === id ? <BodyDetailsCard key={item.id} item={item} /> : null;
       })}
     </div>
   );

@@ -1,10 +1,17 @@
 import React from 'react';
 
-const BodyDetailsCard = props => {
-  console.log(props);
+import '../../styles/BodyDetails.css';
+
+const BodyDetailsCard = ({item}) => {
+  // console.log(item.name);
   return (
-    <div>
-      <p>Hello world</p>
+    <div className='body-details-container'>
+      <div className='body-details-card'>
+        <div className='body-details-card-img'>
+          <img src={item.imageUrl} />
+        </div>
+        <h2>Name of the organ: {item.name}</h2>
+      </div>
     </div>
   );
 };
