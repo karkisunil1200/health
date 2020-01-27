@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 
 import {imageData} from '../../images';
 import '../../styles/BodyList.css';
+import BodyCard from './BodyCard';
+import {Link} from 'react-router-dom/cjs/react-router-dom.min';
 
 const BodyList = props => {
   const [state, setState] = useState(imageData);
@@ -11,12 +13,8 @@ const BodyList = props => {
       <h4 className='title'>Organs </h4>
       <div className='image-list'>
         {state.map(item => {
-          return (
-            <div className='card'>
-              <img src={item.imageUrl} />
-              <h5>Name: {item.name} </h5>
-            </div>
-          );
+          // console.log('This is from bodylist: ', item);
+          return <BodyCard key={item.imageUrl} item={item} />;
         })}
       </div>
     </div>
