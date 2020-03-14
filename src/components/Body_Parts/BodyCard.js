@@ -6,11 +6,17 @@ const BodyCard = ({item}) => {
   // console.log('This is the id', id);
   return (
     <div>
-      <img src={item.imageUrl} />
-      <div className='name'>
-        <Link to={`/bodylist/${id}`}>
-          <h4>{item.name}</h4>
-        </Link>
+      <div className='pic-header'>
+        <img src={item.imageUrl} />
+        <div className='name'>
+          <Link to={`/bodylist/${id}`}>
+            <h4>{item.name}</h4>
+          </Link>
+        </div>
+      </div>
+
+      <div className='pic-describtion'>
+        <p>{item.describtion}</p>
       </div>
     </div>
   );

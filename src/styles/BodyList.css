@@ -4,7 +4,7 @@
 .image-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .image-list img {
@@ -13,10 +13,11 @@
   border: 10px solid white;
   box-shadow: 0 5px 10px #ccc;
   object-fit: cover;
+  transition: 0.5s;
 }
-/* .image-list img:hover {
+.image-list img:hover {
   transform: translateY(-20px);
-} */
+}
 .title {
   text-align: center;
   font-size: 33px;

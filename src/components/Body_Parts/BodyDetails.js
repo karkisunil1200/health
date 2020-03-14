@@ -8,7 +8,7 @@ const BodyDetails = props => {
   //
   const id = props.match.params.id;
 
-  console.log('this is the id ', id);
+  // console.log('this is the id ', id);
   // const response = {state.filter( (item) => item.id === id )}
 
   return (
